@@ -26,8 +26,9 @@
 
   <body class="<%= page_classes %>">
 
-    <%= partial "navbar" %>
+    <%= partial "navbar" %> <!-- call _navbar.html.erb partial -->
     <%= yield %>
+    <%= partial "footer" %>   <!-- call _footer.html.erb partial -->
 
   </body>
 </html>

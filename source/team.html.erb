@@ -1,0 +1,28 @@
+<h1 class="text-center">Meet the team</h1>
+
+ <ul class="list-inline text-center">
+    <% %w(anne seb romain).each do |member| %>
+      <li>
+        <img src="images/<%= member%>.jpg" width="100" class= "img-circle" alt="">
+ <!--  Codigo antigo
+ <%= image_tag "#{member}.jpg", class: "img-circle", width: "100" %>-->
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+
+<!-- If it was only HTML code
+<ul class="list-inline text-center">
+  <li>
+    <img src="images/anne.jpg" alt="">
+    <h3>Anne</h3>
+  </li>
+  <li>
+    <img src="images/seb.jpg" alt="">
+    <h3>Seb</h3>
+  </li>
+  <li>
+    <img src="images/romain.jpeg" alt="">
+    <h3>Romain</h3>
+  </li>
+</ul> -->
